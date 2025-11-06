@@ -1,0 +1,45 @@
+[
+    {
+        "name": "joetannenbaum/alfred-workflow",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/godbout/alfred-workflow.git",
+            "reference": "aafd335a75e5bacd0e0d26287c30bcf31f63e695"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/godbout/alfred-workflow/zipball/aafd335a75e5bacd0e0d26287c30bcf31f63e695",
+            "reference": "aafd335a75e5bacd0e0d26287c30bcf31f63e695",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.4.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^5.3|~4.8"
+        },
+        "time": "2018-08-13T07:11:50+00:00",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "Alfred\\Workflows\\": "src/"
+            }
+        },
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Joe Tannenbaum",
+                "email": "joe@joe.codes"
+            }
+        ],
+        "description": "PHP helper for creating Alfred Workflows.",
+        "support": {
+            "source": "https://github.com/godbout/alfred-workflow/tree/master"
+        }
+    }
+]
