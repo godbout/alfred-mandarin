@@ -19,6 +19,7 @@ foreach (getLines($file) as $key => $line) {
             ->subtitle('🇨🇳' . $line[1])
             ->arg($line[1])
             ->valid()
+            ->match($line[1] . $line[2])
             ->mod(
                 Cmd::create()
                     ->subtitle("Show the shit above in big letters if you can't see clearly 🖕🏽️")

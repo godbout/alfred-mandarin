@@ -171,7 +171,7 @@
 			<key>config</key>
 			<dict>
 				<key>alfredfiltersresults</key>
-				<false/>
+				<true/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
 				<key>argumenttreatemptyqueryasnil</key>
@@ -510,10 +510,8 @@ https://github.com/godbout/alfred-mandarin</string>
 			<string>file</string>
 		</dict>
 	</array>
-	<key>variablesdontexport</key>
-	<array/>
 	<key>version</key>
-	<string>1.0.0</string>
+	<string>1.1.0</string>
 	<key>webaddress</key>
 	<string>https://sleeplessmind.info</string>
 </dict>

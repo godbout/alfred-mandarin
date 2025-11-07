@@ -1,0 +1,45 @@
+{
+    "name": "godbout/alfred-workflow-scriptfilter",
+    "description": "Generate Alfred 3 or 4 Workflow Results in PHP with a laugh.",
+    "keywords": [
+        "alfred",
+        "workflow",
+        "alfred-workflow",
+        "scriptfilter",
+        "results",
+        "php"
+    ],
+    "homepage": "https://github.com/godbout/alfred-workflow-scriptfilter",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Guillaume Leclerc",
+            "email": "guill@sleeplessmind.com.mo",
+            "role": "Craftsman"
+        }
+    ],
+    "require": {
+        "php": "^8.0.2"
+    },
+    "require-dev": {
+        "hassankhan/config": "^3.0",
+        "codedungeon/phpunit-result-printer": "^0.32",
+        "phpunit/phpunit": "^9.5.20",
+        "scrutinizer/ocular": "^1.9",
+        "symfony/yaml": "^5.4.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Godbout\\Alfred\\Workflow\\": "src"
+        }
+    },
+    "scripts": {
+        "format": "php-cs-fixer fix -vvv --config=.php_cs.dist --ansi",
+        "test": "vendor/bin/phpunit --colors=always",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}

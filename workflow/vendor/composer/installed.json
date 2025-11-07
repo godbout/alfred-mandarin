@@ -1,45 +1,76 @@
-[
-    {
-        "name": "joetannenbaum/alfred-workflow",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/godbout/alfred-workflow.git",
-            "reference": "aafd335a75e5bacd0e0d26287c30bcf31f63e695"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/godbout/alfred-workflow/zipball/aafd335a75e5bacd0e0d26287c30bcf31f63e695",
-            "reference": "aafd335a75e5bacd0e0d26287c30bcf31f63e695",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.4.0"
-        },
-        "require-dev": {
-            "phpunit/phpunit": "^5.3|~4.8"
-        },
-        "time": "2018-08-13T07:11:50+00:00",
-        "type": "library",
-        "installation-source": "source",
-        "autoload": {
-            "psr-4": {
-                "Alfred\\Workflows\\": "src/"
-            }
-        },
-        "license": [
-            "MIT"
+{
+        "packages": [
+                {
+                        "name": "godbout/alfred-workflow-scriptfilter",
+                        "version": "2.4.0",
+                        "version_normalized": "2.4.0.0",
+                        "source": {
+                                "type": "git",
+                                "url": "https://github.com/godbout/alfred-workflow-scriptfilter.git",
+                                "reference": "c597e67b31ea49fac6f6407ed918533ed056d9a1"
+                        },
+                        "dist": {
+                                "type": "zip",
+                                "url": "https://api.github.com/repos/godbout/alfred-workflow-scriptfilter/zipball/c597e67b31ea49fac6f6407ed918533ed056d9a1",
+                                "reference": "c597e67b31ea49fac6f6407ed918533ed056d9a1",
+                                "shasum": ""
+                        },
+                        "require": {
+                                "php": "^8.0.2"
+                        },
+                        "require-dev": {
+                                "codedungeon/phpunit-result-printer": "^0.32",
+                                "hassankhan/config": "^3.0",
+                                "phpunit/phpunit": "^9.5.20",
+                                "scrutinizer/ocular": "^1.9",
+                                "symfony/yaml": "^5.4.3"
+                        },
+                        "time": "2022-05-06T16:15:27+00:00",
+                        "type": "library",
+                        "installation-source": "dist",
+                        "autoload": {
+                                "psr-4": {
+                                        "Godbout\\Alfred\\Workflow\\": "src"
+                                }
+                        },
+                        "notification-url": "https://packagist.org/downloads/",
+                        "license": [
+                                "MIT"
+                        ],
+                        "authors": [
+                                {
+                                        "name": "Guillaume Leclerc",
+                                        "email": "guill@sleeplessmind.com.mo",
+                                        "role": "Craftsman"
+                                }
+                        ],
+                        "description": "Generate Alfred 3 or 4 Workflow Results in PHP with a laugh.",
+                        "homepage": "https://github.com/godbout/alfred-workflow-scriptfilter",
+                        "keywords": [
+                                "alfred",
+                                "alfred-workflow",
+                                "php",
+                                "results",
+                                "scriptfilter",
+                                "workflow"
+                        ],
+                        "support": {
+                                "issues": "https://github.com/godbout/alfred-workflow-scriptfilter/issues",
+                                "source": "https://github.com/godbout/alfred-workflow-scriptfilter/tree/2.4.0"
+                        },
+                        "funding": [
+                                {
+                                        "url": "https://github.com/godbout",
+                                        "type": "github"
+                                },
+                                {
+                                        "url": "https://ko-fi.com/godbout",
+                                        "type": "ko_fi"
+                                }
+                        ],
+                        "install-path": "../godbout/alfred-workflow-scriptfilter"
+                }
         ],
-        "authors": [
-            {
-                "name": "Joe Tannenbaum",
-                "email": "joe@joe.codes"
-            }
-        ],
-        "description": "PHP helper for creating Alfred Workflows.",
-        "support": {
-            "source": "https://github.com/godbout/alfred-workflow/tree/master"
-        }
-    }
-]
+        "dev": true,
+        "dev-package-names": []
+}

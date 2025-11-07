@@ -7,17 +7,21 @@ namespace Composer\Autoload;
 class ComposerStaticInit1e0d5bce0d177a7581848728dea4d077
 {
     public static $prefixLengthsPsr4 = array (
-        'A' => 
+        'G' => 
         array (
-            'Alfred\\Workflows\\' => 17,
+            'Godbout\\Alfred\\Workflow\\' => 24,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'Alfred\\Workflows\\' => 
+        'Godbout\\Alfred\\Workflow\\' => 
         array (
-            0 => __DIR__ . '/..' . '/joetannenbaum/alfred-workflow/src',
+            0 => __DIR__ . '/..' . '/godbout/alfred-workflow-scriptfilter/src',
         ),
+    );
+
+    public static $classMap = array (
+        'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
@@ -25,6 +29,7 @@ class ComposerStaticInit1e0d5bce0d177a7581848728dea4d077
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit1e0d5bce0d177a7581848728dea4d077::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit1e0d5bce0d177a7581848728dea4d077::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit1e0d5bce0d177a7581848728dea4d077::$classMap;
 
         }, null, ClassLoader::class);
     }
